@@ -1,0 +1,21 @@
+
+<div class="carousel-item active" style="position: relative;" style="height:-300px;">
+    <%= image_tag '꾸미기_2월_KSI_5157_cs6_1920_3_s', class: 'd-block w-100', alt: 'Firtst slide' %>
+</div>
+<hr>
+<div class= "board " style="position: relative; left:10px; top: -800px; height:0px;">
+    <br /><br /><p class="text-center text-white" style="font-size: 30px;">Bulletin Board</p>
+    <p class="text-center text-white" style="font-size: 13px;">Let us know where you want to go who you want to travel.</p>
+    <% @posts.each do |post| %>
+    <div class="content text-center text-white">
+        <hr><span>(<%= post.id%>)</span>
+        <span><a href="/home/show/<%= post.id %>" style="color: white"><%= post.theme %> </a></span>
+        <span><a href="/home/destroy/<%= post.id %>"  data-method="post" style="color: yellow">[DELETE]</a></span>
+        <span><a href="/home/edit/<%= post.id %>" data-method="get" style="color: powderblue">[EDIT]</a></span>
+    </div>
+    <hr>
+    <% end %>
+    <div class="d-flex align-items-center flex-column" style="position: relative;" >
+        <button type="button" class="btn btn-primary" onclick="window.location.href='/home/write'">Write Post</button>
+    </div>
+</div>

@@ -1,0 +1,34 @@
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="height:0px;">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner" style="position: relative;">
+    
+    <div class="carousel-item active">
+      <%= image_tag '꾸미기_꾸미기_3월_KSI_7930_cs6_1600_s.jpg', class: 'd-block w-100', alt: 'Firtst slide' %>
+    </div>
+    <div class="carousel-item">
+      <%= image_tag '꾸미기_꾸미기_8월_KSI_3711_cs6_1600_s', class: 'd-block w-100', alt: 'Firtst slide' %>
+    </div>
+    <div class="carousel-item">
+      <%= image_tag '꾸미기_꾸미기_image3.jpg', class: 'd-block w-100', alt: 'Firtst slide' %>
+    </div>
+  </div>
+  <div class="d-flex align-items-center flex-column" style="position: relative; left:10px; top: -500px;" >
+      <div>
+        <br /><br /><p class="text-white text-center" style="font-size: 40px;">Match your own person who can help traveling in just minute.</p>
+      </div>
+      <div>
+        <p class="text-white text-center" style="font-size: 20px;">Click the match button beneath. If you aren't a member, process signing up in seconds. </p><br /><br />
+      </div>
+      <div>
+        <form action="/home/login" method="post">
+          <button type="button" class="btn btn-primary btn-lg" style="width: 150px" onclick="window.location.href='/users/sign_in'">　Login　</button>
+          <button type="button" class="btn btn-primary btn-lg" style="width: 150px" onclick="window.location.href='/users/sign_up'">　Sign Up　</button>
+        </form>
+      </div>
+    </div>
+</div>

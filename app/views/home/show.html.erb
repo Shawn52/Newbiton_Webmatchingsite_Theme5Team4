@@ -1,0 +1,30 @@
+<div class="carousel-item active" style="position: relative; ">
+    <%= image_tag '꾸미기_2월_KSI_5157_cs6_1920_3_s', class: 'd-block w-100', alt: 'Firtst slide' %>
+</div>
+<div class="container text-white" style="position: relative; left:10px; top: -750px; height:0px;"><br>
+        <p>Travel Thema : <%= @post.theme %></p><br>
+        <p>Guide Name : <%= @post.guide %></p><br>
+        <p>Language : <%= @post.language %></p><br>
+        <p>Location : <%= @post.region %></p><br>
+        <p>Travel Content : <%= @post.content %></p>
+        <a href = "/" style="color: powderblue">[HOME]</a>
+        <a href = "/home/destroy/<%= @post.id %>" data-confirm="Are you sure?" data-method="post" style="color: yellow">[DELETE]</a>
+    
+    
+    <div id="lv-container" data-id="city" data-uid="MTAyMC8zNjI2Ni8xMjgwMQ==" style="position: relative; left:10px; top: 0px; color: white;">
+    <script type="text/javascript">
+       (function(d, s) {
+           var j, e = d.getElementsByTagName(s)[0];
+    
+           if (typeof LivereTower === 'function') { return; }
+    
+           j = d.createElement(s);
+           j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+           j.async = true;
+    
+           e.parentNode.insertBefore(j, e);
+       })(document, 'script');
+    </script>
+    <noscript> Activate Javascrip to write library comment</noscript>
+    </div>
+</div>
